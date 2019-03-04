@@ -1,1 +1,15 @@
+---
+layout:     post
+title:      "Test for Blog posts"
+subtitle:   "How to add catalog for post and remain in top side"
+date:       2019-03-04 14:47:42
+author:     "Jonghun Park"
+header-img: "img/post-bg-re-vs-ng2.jpg"
+header-mask: 0.3
+catalog:    true
+tags:
+  - Web
+  - JavaScript
+---
+
 # Test
