@@ -13,7 +13,7 @@ tags:
   - Port
 ---
 
-# 들어가며
+## 들어가며
 
 추후에 아마도 설명하겠지만.. 저는 Windows 10 pro 위에 Hyper-V 기능을 이용해서 Ubuntu 18.04 와 Windows 8.1 을 올려놓고 사용중입니다. Hyper-V 의 기능으로, 위에서 말한 세 개의 OS는 공유기 하위에 별도의 IP를 할당받고 있습니다. (NAT기능, 추후 설명 예정)
 
@@ -27,9 +27,9 @@ tags:
 
 
 
-# 수정하기
+## 수정하기
 
-### 시작 > 실행 > regedit 를 입력하여 레지스트리 편집기에 진입합니다. 
+##### 시작 > 실행 > regedit 를 입력하여 레지스트리 편집기에 진입합니다. 
 
 ![](/blog/img/post/2019-03-05-change-rdp-port/post-change-rdp-port-00002.png)
 
@@ -37,7 +37,7 @@ tags:
 
 
 
-### port 번호를 지정하는 레지스트리를 찾아가 수정합니다. 
+##### port 번호를 지정하는 레지스트리를 찾아가 수정합니다. 
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp
 
@@ -51,7 +51,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\
 
 
 
-### 외부에 오픈하는 포트를 방화벽에 추가해 줍니다. 
+##### 외부에 오픈하는 포트를 방화벽에 추가해 줍니다. 
 
 제어판 > 시스템 및 보안 > Windows 방화벽 > 고급 설정 으로 이동하여, 인바운드 규칙 부분에서 앞서 사용하던 3389에 해당하는 인바운드 규칙을 삭제합니다. 사실 그대로 삭제하지 않아도 무방하나 깔끔한 설정을 원하신다면 삭제하세요.
 
@@ -66,7 +66,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\
 
 
 
-### 원격 데스크톱 연결 서비스를 중지시키고 다시 실행합니다. 
+##### 원격 데스크톱 연결 서비스를 중지시키고 다시 실행합니다. 
 
 ![](/blog/img/post/2019-03-05-change-rdp-port/post-change-rdp-port-00006.png)
 
