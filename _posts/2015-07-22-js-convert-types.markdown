@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "How to convert string to number, how to cut point value from number"
+title:      "How to convert string to number, how to cut decimal point from number"
 subtitle:   "문자열을 숫자로 변환하기, 소수점 잘라내기"
 date:       2015-07-22 23:38:00
 author:     "Jonghun Park"
