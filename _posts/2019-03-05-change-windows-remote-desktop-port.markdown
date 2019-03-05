@@ -51,7 +51,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\
 
 
 
-## 외부에 오픈하는 포트를 방화벽에 추가해 줍니다. 
+### 외부에 오픈하는 포트를 방화벽에 추가해 줍니다. 
 
 제어판 > 시스템 및 보안 > Windows 방화벽 > 고급 설정 으로 이동하여, 인바운드 규칙 부분에서 앞서 사용하던 3389에 해당하는 인바운드 규칙을 삭제합니다. 사실 그대로 삭제하지 않아도 무방하나 깔끔한 설정을 원하신다면 삭제하세요.
 
