@@ -15,7 +15,7 @@ tags:
 
 추후에 아마도 설명하겠지만.. 저는 Windows 10 pro 위에 Hyper-V 기능을 이용해서 Ubuntu 18.04 와 Windows 8.1 을 올려놓고 사용중입니다. Hyper-V 의 기능으로, 위에서 말한 세 개의 OS는 공유기 하위에 별도의 IP를 할당받고 있습니다. (NAT기능, 추후 설명 예정)
 
-[](/img/post/post-change-rdp-port-00001.png)
+![](/img/post/2019-03-05-change-rdp-port/post-change-rdp-port-00001.png)
 
 이렇게 해 놓으면 한 개의 물리적인 머신 한 개만으로도 3개의 OS를 각각 돌릴 수 있고, 원격 데스크톱 기능을 이용해서 각 OS에 직접 접근할 수 있습니다. 집 안이 아닌, 외부에서도 가능하다는 점이 가장 큰 장점입니다. (저는 Windows 8.1 을 각종 은행 및 공공기관 Active-X 대응용으로 사용하고 있습니다.)
 
