@@ -2,7 +2,7 @@
 layout:     post
 title:      "SpringBoot - (1) Startup"
 subtitle:   "SpringBoot - (1) 시작하기"
-date:       2018-03-21
+date:       2018-09-21
 author:     "Jonghun Park"
 header-img: "img/post-bg-springboot.jpg"
 header-mask: 0.3
@@ -66,5 +66,6 @@ OS 옆에 버튼을 눌러 확장하고, 64bit 라면 64Bit 를 받습니다. 32
 > STS는 Eclipse 와 완전히 동일한 IDE입니다. 기존 사용하던 Eclipse 에서 사용하려면 다운로드 페이지에 있는 Plug-in 다운로드를 이용하세요
 
 
+GitHub 소스 위치 : https://github.com/Simplify-study/SpringBootSample.git
 
 출처: https://4urdev.tistory.com/43 [Simplify]
