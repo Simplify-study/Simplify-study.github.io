@@ -22,7 +22,8 @@ $( "body" ).data( "foo", 52 );
 $( "body" ).data( "bar", { myType: "test", count: 40 } );
 $( "body" ).data( { baz: [ 1, 2, 3 ] } );
 $( "body" ).data( "foo" ); // 52
-$( "body" ).data(); // { foo: 52, bar: { myType: "test", count: 40 }, baz: [ 1, 2, 3 ]
+$( "body" ).data(); 
+// { foo: 52, bar: { myType: "test", count: 40 }, baz: [ 1, 2, 3 ] }
 ```
 
 위 예제는 jQuery 공식 홈페이지 document 문서에서 발췌되었습니다. (https://api.jquery.com/data/)  
