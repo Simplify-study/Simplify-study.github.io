@@ -56,7 +56,7 @@ prefix 가 폴더에 해당하는 내용이고, suffix가 jsp 확장자에 해�
 
 /src/main/webapp/WEB-INF/jsp/main.jsp 경로에 jsp 파일을 생성하고 아래처럼 작성 해 두었습니다. 여기서부터는 화면 개발 하는 과정과 동일합니다. 
 
-```jsp
+```html
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -147,7 +147,8 @@ public class JspController {
 ```
 
 ##### /src/main/webapp/WEB-INF/jsp/mavSample.jsp
-```jsp
+
+```html
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
