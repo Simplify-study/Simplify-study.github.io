@@ -104,7 +104,9 @@ $Grid.jqGrid('resetSelection');
 ## 출처
 
 http://www.trirand.com/jqgridwiki/doku.php?id=wiki:methods
+
 http://javafactory.tistory.com/1161
+
 http://pyungyi.blogspot.com/2011/09/jqgrid-get-selected-row.html
 
 
