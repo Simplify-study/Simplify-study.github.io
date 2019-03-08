@@ -111,7 +111,7 @@ ubuntu@ip-172-26-15-247:~$ ln -s ~/tmp/myfolder/ myfolderlink
 ubuntu@ip-172-26-15-247:~$ ll | grep myfolderlink
 lrwxrwxrwx  1 ubuntu ubuntu    26 Oct  5 00:32 myfolderlink -> /home/ubuntu/tmp/myfolder//
 ```
-```sh
+```shell_session
 ubuntu@ip-172-26-15-247:~$ rm -f myfolderlink/
 rm: cannot remove 'myfolderlink/': Is a directory
 ```
