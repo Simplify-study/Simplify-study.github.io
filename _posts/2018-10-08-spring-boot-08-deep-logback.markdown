@@ -148,7 +148,7 @@ Spring Boot를 사용하면서 logback 설정 파일을 추가하려면 이름�
 </included>
 ```
 
-#####구동 profile 등록하기 
+##### 구동 profile 등록하기 
 
 위에 선언한 것 처럼 각 profile을 걸맞게 Run Configuration에 추가해 줍니다. 
 
