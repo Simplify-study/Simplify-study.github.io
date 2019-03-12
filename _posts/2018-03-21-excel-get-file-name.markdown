@@ -34,7 +34,7 @@ public class TestClass {
 
 ## 해결방안
 
-![](/blog/img/post/2018-03-21-excel-get-file-name/excel-get-file-name-00001.png)
+![](/img/post/2018-03-21-excel-get-file-name/excel-get-file-name-00001.png)
 
 위 캡쳐본 처럼 파일 전체 경로가 쭉 주어졌다고 했을 경우, 그 옆에 아래처럼 수식을 넣으면 됩니다. 
 
@@ -42,7 +42,7 @@ public class TestClass {
 
 각 함수들의  의미를 아래와 같이 풀어서 적어보았습니다. 좌측이 각 함수들의 의미이고, 우측이 그 결과입니다.
 
-![](/blog/img/post/2018-03-21-excel-get-file-name/excel-get-file-name-00002.png)
+![](/img/post/2018-03-21-excel-get-file-name/excel-get-file-name-00002.png)
 
 위 세 줄을 해석하면 다음고 같습니다. 
 

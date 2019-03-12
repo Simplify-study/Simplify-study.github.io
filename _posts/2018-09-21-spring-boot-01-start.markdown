@@ -28,11 +28,11 @@ Spring 은 최근 가장 많이 사용하는 서버 프로그래밍 프레임워
 
 oracle 의 Java 다운로드 페이지에서 JDK를 다운로드 받습니다. 저는 Java 버전 중 최근 많이 쓰이는 Java 8 버전을 기준으로 작성하겠습니다. License 부분에 Agree 를 선택하고 OS에 맞는 버전을 다운로드 받습니다. 
 
-![](/blog/img/post/2018-09-21-spring-boot-01-start/spring-boot-01-start-00001.png)
+![](/img/post/2018-09-21-spring-boot-01-start/spring-boot-01-start-00001.png)
 
 적절한 파일을 다운로드 받아 설치를 진행하고 나면 최신 버전에서는 알아서 윈도우 환경변수에 넣어줍니다. 물론 다양한 버전을 사용하고 있다거나, 기존의 링크가 맘에 들지 않는다면 별도로 잡아주는 것이 좋습니다. 참고로, JDK 설치 과정에서 JRE도 자동으로 설치되는데, 기본적으로 잡혀있는 환경변수는 이 JRE를 바라보고 있으므로, 개발 목적으로는 환경변수를 변경하는 것이 좋습니다. 윈도우 10 부터는 환경변수가 아래처럼 표로 보기좋게 설정하게 되어 있습니다. 
 
-![](/blog/img/post/2018-09-21-spring-boot-01-start/spring-boot-01-start-00002.png)
+![](/img/post/2018-09-21-spring-boot-01-start/spring-boot-01-start-00002.png)
 
 보통의 경우, 저는 JAVA_HOME 변수를 시스템 변수에 만들어 두고, 이 경로를 바라보게 해 둡니다. %JAVA_HOME% 부분이 변수로 설정된 것을 읽어오게 되는 부분이고, 그 하위에 bin 디렉토리를 Path 에 넣어줍니다. 이렇게 하면 JAVA 버전이 변경되었거나 다수의 JAVA가 설치되어 있는 환경에서도 순쉽게 환경 변수를 변경할 수 있습니다. (필수사항은 아닙니다) 또한 저 변수가 암묵적으로 통용되는 항목이기 때문에 Tomcat 이나 Eclipse 등에서도 찾아보게 되어 있어, 편리합니다. 
 
@@ -43,11 +43,11 @@ oracle 의 Java 다운로드 페이지에서 JDK를 다운로드 받습니다. �
 
 기존에는 Eclipse 에 Spring 개발 Plug-in을 추가로 설치했었으나, 근래에는 그냥 STS를 다운받아 사용하라고 합니다. 아무래도 필요한 Plug-in 들이 대부분 들어있고, 별도로 설치해 줄 필요가 없어 편리합니다. STS 다운로드 페이지(Spring Tools 페이지)를 방문하여 STS 를 OS에 맞는 것을 다운로드 받습니다. 
 
-![](/blog/img/post/2018-09-21-spring-boot-01-start/spring-boot-01-start-00003.png)
+![](/img/post/2018-09-21-spring-boot-01-start/spring-boot-01-start-00003.png)
 
 위와 같은 화면에서 See All versions 를 선택하여 상세 페이지에 진입합니다. 
 
-![](/blog/img/post/2018-09-21-spring-boot-01-start/spring-boot-01-start-00004.png)
+![](/img/post/2018-09-21-spring-boot-01-start/spring-boot-01-start-00004.png)
 
 OS 옆에 버튼을 눌러 확장하고, 64bit 라면 64Bit 를 받습니다. 32bit를 받아서 실행해도 무관하나, 성능을 최대로 끌어올려 사용하려면 이런 방법이 더 좋습니다. Eclipse 처럼 STS역시 zip 파일 형태로 다운로드 됩니다. 적절한 곳에 압축을 풀고, \sts-bundle\sts-3.9.5.RELEASE 경로로 이동하여 STS.exe 파일을 실행합니다. 
 
@@ -59,7 +59,7 @@ OS 옆에 버튼을 눌러 확장하고, 64bit 라면 64Bit 를 받습니다. 32
 
 이클립스와 비슷한 UI가 실행되어 나타나면 정상적으로 설치된 것입니다. 
 
-![](/blog/img/post/2018-09-21-spring-boot-01-start/spring-boot-01-start-00005.png)
+![](/img/post/2018-09-21-spring-boot-01-start/spring-boot-01-start-00005.png)
 
 > 최초 실행하는 경우 workspace를 설정하라고 물어보는데, 기본으로 설정된 폴더보다는 특정 위치를 잡아놓는 것이 편합니다. 
 

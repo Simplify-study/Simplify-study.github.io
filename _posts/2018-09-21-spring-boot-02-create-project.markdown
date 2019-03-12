@@ -18,15 +18,15 @@ tags:
 
 ##### New Project 생성
 
-![](/blog/img/post/2018-09-21-spring-boot-02-create-project/spring-boot-02-create-project-00001.png)
+![](/img/post/2018-09-21-spring-boot-02-create-project/spring-boot-02-create-project-00001.png)
 
 STS를 실행하고 좌측 Project Explorer(Package Explorer) 에서 우클릭 > New > Other... 를 선택합니다.  
 
-![](/blog/img/post/2018-09-21-spring-boot-02-create-project/spring-boot-02-create-project-00002.png)
+![](/img/post/2018-09-21-spring-boot-02-create-project/spring-boot-02-create-project-00002.png)
 
 New 창에서 Spring Boot 폴더 하위에 있는 Spring Starter Project를 선택하고 Next > 를 클릭합니다. 
 
-![](/blog/img/post/2018-09-21-spring-boot-02-create-project/spring-boot-02-create-project-00003.png)
+![](/img/post/2018-09-21-spring-boot-02-create-project/spring-boot-02-create-project-00003.png)
 
 프로젝트 상세 설정을 하는 페이지에서 저는 위와 같이 입력하였습니다. 
 
@@ -44,20 +44,20 @@ New 창에서 Spring Boot 폴더 하위에 있는 Spring Starter Project를 선�
 
   기본값은 war이고 이는 tomcat 에 올리기에 적당한 파일 형태입니다. 이것 역시 추후 pom.xml 에서 변경해서 사용 가능합니다.
 
-![](/blog/img/post/2018-09-21-spring-boot-02-create-project/spring-boot-02-create-project-00004.png)
+![](/img/post/2018-09-21-spring-boot-02-create-project/spring-boot-02-create-project-00004.png)
 
-![](/blog/img/post/2018-09-21-spring-boot-02-create-project/spring-boot-02-create-project-00005.png)
+![](/img/post/2018-09-21-spring-boot-02-create-project/spring-boot-02-create-project-00005.png)
 
 그 이후 설정들은 그대로 둔 채로 마지막까지 진행하여 프로젝트를 생성합니다. 아래 그림처럼 프로젝트가 생성되면 됩니다.
 
-![](/blog/img/post/2018-09-21-spring-boot-02-create-project/spring-boot-02-create-project-00006.png)
+![](/img/post/2018-09-21-spring-boot-02-create-project/spring-boot-02-create-project-00006.png)
 
 
 ##### 기본 생성된 파일 설명
 
 위 과정을 거쳐서 프로젝트를 생성(Wizard 를 이용한 프로젝트 생성)하고 나면, 몇 개의 파일들이 기본적으로 생성됩니다. 우선 아래와 같이 펼쳐놓고 각 파일에 대한 설명을 진행합니다.
 
-![](/blog/img/post/2018-09-21-spring-boot-02-create-project/spring-boot-02-create-project-00007.png)
+![](/img/post/2018-09-21-spring-boot-02-create-project/spring-boot-02-create-project-00007.png)
 
 * pom.xml 
 

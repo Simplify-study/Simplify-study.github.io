@@ -107,7 +107,7 @@ logging:
 
 결과적으로, 사용자 정보를 가져오지는 못합니다. 이유는, openapi 로 시작한 것은 인증을 하지 않는 것으로 정의했고, 그렇게 되면 인증된 사용자 정보 역시 넣어주지 않기 때문입니다. 
 
-![](/blog/img/post/2018-10-10-spring-boot-09-property-auth-principal/spring-boot-09-property-auth-principal-00001.png)
+![](/img/post/2018-10-10-spring-boot-09-property-auth-principal/spring-boot-09-property-auth-principal-00001.png)
 
 ##### /getMember
 
@@ -115,7 +115,7 @@ logging:
 
 /getMember 를 호출하게 되면, 로그인 화면으로 이동하고 로그인을 완료하면 사용자 정보가 올바르게 나타납니다. 
 
-![](/blog/img/post/2018-10-10-spring-boot-09-property-auth-principal/spring-boot-09-property-auth-principal-00002.png)
+![](/img/post/2018-10-10-spring-boot-09-property-auth-principal/spring-boot-09-property-auth-principal-00002.png)
 
 
 GitHub 소스 위치 : https://github.com/Simplify-study/SpringBootSample.git

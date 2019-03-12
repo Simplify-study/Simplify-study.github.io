@@ -143,7 +143,7 @@ public class RestfulController {
 
 ##### 결과 확인
 
-![](/blog/img/post/2018-10-10-spring-boot-10-restful-module/spring-boot-10-restful-module-00001.png)
+![](/img/post/2018-10-10-spring-boot-10-restful-module/spring-boot-10-restful-module-00001.png)
 
 
 GitHub 소스 위치 : https://github.com/Simplify-study/SpringBootSample.git

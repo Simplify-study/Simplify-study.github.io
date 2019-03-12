@@ -180,7 +180,7 @@ public class CustomLoginFailureHandler implements AuthenticationFailureHandler {
 
 에제 실행을 하고 로그를 확인해 보면, 아래와 같이 로그인이 성공한 시점에 IP 정보를 정상적으로 받아옴을 알 수 있습니다. 
 
-![](/blog/img/post/2018-10-08-spring-boot-07-1-login-success-handler/spring-boot-07-1-login-success-handler-00001.png)
+![](/img/post/2018-10-08-spring-boot-07-1-login-success-handler/spring-boot-07-1-login-success-handler-00001.png)
 
 
 

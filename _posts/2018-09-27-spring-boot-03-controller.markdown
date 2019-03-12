@@ -36,7 +36,7 @@ tags:
 
 Spring 을 Eclipse 에서 개발할 때에는 java 파일은 src/main/java 항목 아래에 작성합니다. 결국은 다 같은 경로인데, 모아주는 의미에서 저렇게 보여지고 있고, 저 구조에는 조금 친해져야 할 필요가 있습니다. 해당 항목을 열면, 처음 프로젝트 생성 당시에 적어둔 패키지명이 보이고, 저는 그 아래에 controller 패키지를 만들어 구분을 두겠습니다. 
 
-![](/blog/img/post/2018-09-27-spring-boot-03-controller/spring-boot-03-controller-00001.png)
+![](/img/post/2018-09-27-spring-boot-03-controller/spring-boot-03-controller-00001.png)
 
 해당 패키지 아래에 CommonController.java 파일을 생성했습니다. 당연하지만, New > Class 를 이용해야 조금 더 편리합니다. 단순 파일 생성하게 되면 패키지 선언부분부터, 아래 class 부분까지를 다 직접 써넣어야 합니다. 
 
@@ -98,7 +98,7 @@ public class CommonController2 {
 
 위와 같이 작업한 뒤에, 프로젝트를 Spring boot app 으로 실행시킨 뒤, 브라우져에서 아래와 같이 나오는지 확인한다. (https://localhost:8080/demo 에서도 확인한다)
 
-![](/blog/img/post/2018-09-27-spring-boot-03-controller/spring-boot-03-controller-00002.png)
+![](/img/post/2018-09-27-spring-boot-03-controller/spring-boot-03-controller-00002.png)
 
 ## 참고
 

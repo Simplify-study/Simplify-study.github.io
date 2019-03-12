@@ -25,11 +25,11 @@ tags:
 
 Apple 홈페이지(https://www.apple.com/kr/itunes/)에서 최신 아이튠즈 설치 파일을 다운로드합니다. 
 
-![](/blog/img/post/2018-03-05-win-install-iphone-driver/win-install-iphone-driver-00001.png)
+![](/img/post/2018-03-05-win-install-iphone-driver/win-install-iphone-driver-00001.png)
 
 ##### 다운로드 받은 파일을 반디집 등으로 엽니다. 
 
-![](/blog/img/post/2018-03-05-win-install-iphone-driver/win-install-iphone-driver-00002.png)
+![](/img/post/2018-03-05-win-install-iphone-driver/win-install-iphone-driver-00002.png)
 
 ##### AppleMobileDeviceSupportXXXX.msi 를 압축풀고 설치한다.
 

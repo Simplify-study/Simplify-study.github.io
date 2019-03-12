@@ -105,7 +105,7 @@ public class JspController {
 ```
 ## 결과 확인
 
-![](/blog/img/post/2018-10-01-spring-boot-05-model-and-view/spring-boot-05-model-and-view-00001.png)
+![](/img/post/2018-10-01-spring-boot-05-model-and-view/spring-boot-05-model-and-view-00001.png)
 
 ## 주의할 점 ★
 
@@ -113,11 +113,11 @@ public class JspController {
 
 이는 위 controller 에서 두 번째 URL, /abcd를 호출하면 아래와 같은 에러가 나타나는 것을 보면 알 수 있습니다. 
 
-![](/blog/img/post/2018-10-01-spring-boot-05-model-and-view/spring-boot-05-model-and-view-00002.png)
+![](/img/post/2018-10-01-spring-boot-05-model-and-view/spring-boot-05-model-and-view-00002.png)
 
 따라서 이전처럼 데이터 형태로 결과를 반환하고 싶다면 @ResponseBody 를 꼭 명시해 주면 됩니다. 위 /abcd2가 이러한 예 입니다. 이렇게 명시를 해 주면 해당 url을 찾다가 에러가 발생하지 않고, 앞서 진행한 것 처럼 데이터 형태로 return 하게 됩니다. 
 
-![](/blog/img/post/2018-10-01-spring-boot-05-model-and-view/spring-boot-05-model-and-view-00003.png)
+![](/img/post/2018-10-01-spring-boot-05-model-and-view/spring-boot-05-model-and-view-00003.png)
 
 
 
@@ -169,12 +169,12 @@ ${value}
 
 ##### 결과
 
-![](/blog/img/post/2018-10-01-spring-boot-05-model-and-view/spring-boot-05-model-and-view-00004.png)
+![](/img/post/2018-10-01-spring-boot-05-model-and-view/spring-boot-05-model-and-view-00004.png)
 
 
 ## 최종모습
 
-![](/blog/img/post/2018-10-01-spring-boot-05-model-and-view/spring-boot-05-model-and-view-00005.png)
+![](/img/post/2018-10-01-spring-boot-05-model-and-view/spring-boot-05-model-and-view-00005.png)
 
 
 GitHub 소스 위치 : https://github.com/Simplify-study/SpringBootSample.git

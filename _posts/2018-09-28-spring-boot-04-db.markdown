@@ -136,7 +136,7 @@ public class DatabaseConfig {
 
 현재 다루고자 하는 Table 은 다음과 같이 되어 있다. ID, NAME 두 개 Column 으로 구성되어 있으므로, Java에서는 그냥 모두 String으로 받아 처리하는 것으로 한다. 
 
-![](/blog/img/post/2018-09-28-spring-boot-04-db/spring-boot-04-db-00001.png)
+![](/img/post/2018-09-28-spring-boot-04-db/spring-boot-04-db-00001.png)
 
 ```java
 package com.simplify.sample.db.dto;
@@ -254,11 +254,11 @@ Service를 autowired 로 걸고 call 한 결과를 return 합니다. 지난 포�
 
 ## 결과 확인
 
-![](/blog/img/post/2018-09-28-spring-boot-04-db/spring-boot-04-db-00002.png)
+![](/img/post/2018-09-28-spring-boot-04-db/spring-boot-04-db-00002.png)
 
 ## 최종 결과 패키지 구조
 
-![](/blog/img/post/2018-09-28-spring-boot-04-db/spring-boot-04-db-00003.png)
+![](/img/post/2018-09-28-spring-boot-04-db/spring-boot-04-db-00003.png)
 
 
 GitHub 소스 위치 : https://github.com/Simplify-study/SpringBootSample.git

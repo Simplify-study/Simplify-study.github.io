@@ -33,7 +33,7 @@ ul > li { margin: 0 0 5px 0; }
 
 위 두 개의 selector는 모두 unordered-list 하위에 있는 list-item 들을 골라내서 margin 을 조정하는 selector이다. 겉으로 보기엔 똑같아 보이나, 실질적으로는 Children Selector와 Descendants Selector 의 개념이 숨어 있다. 아래 그림을 보고 더 상세하게 설명하겠습니다. 
 
-![](/blog/img/post/2018-10-05-css-child-sibling-selectors/css-child-sibling-selectors-00001.png)
+![](/img/post/2018-10-05-css-child-sibling-selectors/css-child-sibling-selectors-00001.png)
 
 ### Descendants selector
 
@@ -63,13 +63,13 @@ p + p { font-size: smaller; }
 /* Selects an unordered list that directly follows the element with ID title */
 #title + ul { margin-top: 0; } 
 ```
-![](/blog/img/post/2018-10-05-css-child-sibling-selectors/css-child-sibling-selectors-00002.png)
+![](/img/post/2018-10-05-css-child-sibling-selectors/css-child-sibling-selectors-00002.png)
 
 ##### General sibling combinator
 
 이 selector는 두 태그가 인접하지 않아도 이웃하고 있기만 하면 selector의 대상이 됩니다. 아래 그림에서 p ~ p 는 연속된 p, p tag나, 중간에 div가 있는 p, p tag 나 모두 그 대상이 됩니다. div ~ p 역시 연속이므로 이것도 selector의 대상이 됩니다.
 
-![](/blog/img/post/2018-10-05-css-child-sibling-selectors/css-child-sibling-selectors-00003.png)
+![](/img/post/2018-10-05-css-child-sibling-selectors/css-child-sibling-selectors-00003.png)
 
 출처: 
 

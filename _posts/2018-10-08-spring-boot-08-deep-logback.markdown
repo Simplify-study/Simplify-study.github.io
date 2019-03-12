@@ -19,7 +19,7 @@ Spring Boot 를 실행하면 로그가 잘 나옵니다. Eclipse (STS) 기준 Co
 
 Spring Boot 에 기본적으로 Logback이 포함되어 있기 때문에 라이브러리 쪽에 아래 그림처럼 나타납니다. 
 
-![](/blog/img/post/2018-10-08-spring-boot-08-deep-logback/spring-boot-08-deep-logback-00001.png)
+![](/img/post/2018-10-08-spring-boot-08-deep-logback/spring-boot-08-deep-logback-00001.png)
 
 
 ## 구현하기
@@ -152,7 +152,7 @@ Spring Boot를 사용하면서 logback 설정 파일을 추가하려면 이름�
 
 위에 선언한 것 처럼 각 profile을 걸맞게 Run Configuration에 추가해 줍니다. 
 
-![](/blog/img/post/2018-10-08-spring-boot-08-deep-logback/spring-boot-08-deep-logback-00002.png)
+![](/img/post/2018-10-08-spring-boot-08-deep-logback/spring-boot-08-deep-logback-00002.png)
 
 프로파일에 log-file 을 추가해 구동해보고 해당 경로에 파일이 생기는지 확인해 봅니다.
 

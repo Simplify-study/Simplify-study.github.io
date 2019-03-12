@@ -230,9 +230,9 @@ public class UserTestController {
 }
 ```
 
-![](/blog/img/post/2018-10-06-spring-boot-07-security/spring-boot-07-security-00001.png)
+![](/img/post/2018-10-06-spring-boot-07-security/spring-boot-07-security-00001.png)
 
-![](/blog/img/post/2018-10-06-spring-boot-07-security/spring-boot-07-security-00002.png)
+![](/img/post/2018-10-06-spring-boot-07-security/spring-boot-07-security-00002.png)
 
 
 ##### Dependency 추가
@@ -250,7 +250,7 @@ public class UserTestController {
 
 참고로 말씀드리면, 위와 같이 dependency 를 추가한 경우, 아래처럼 여러개의 library 가 추가됩니다. 아래 중, Core부분과 화면 부분에 대한 것을 나눠서 넣어 주어도 상관없습니다만, 편의상 모두를 추가하고 진행하겠습니다. 
 
-![](/blog/img/post/2018-10-06-spring-boot-07-security/spring-boot-07-security-00003.png)
+![](/img/post/2018-10-06-spring-boot-07-security/spring-boot-07-security-00003.png)
 
 ##### Member Class 수정하기
 
@@ -485,7 +485,7 @@ public class CustomWebSecurityConfigurerAdapter extends WebSecurityConfigurerAda
 
 여기까지 작성한 뒤, 재 기동하고 'localhost:8080/' 를 주소창에 입력하여 아래와 같은 login page로 redirection 되는지 확인합니다. 이는 Spring Security 가 기본적으로 가지고 있는 Login page입니다. (추후에 화면을 customizing 하는 것도 알아보겠습니다. )
 
-![](/blog/img/post/2018-10-06-spring-boot-07-security/spring-boot-07-security-00004.png)
+![](/img/post/2018-10-06-spring-boot-07-security/spring-boot-07-security-00004.png)
 
 위 로그인 페이지에 abc / abcd 를 입력하여 로그인이 정상적으로 되는 지 확인합니다. 
 

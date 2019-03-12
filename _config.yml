@@ -5,8 +5,8 @@ header-img: img/post-bg-08.jpg
 email: jonghun.criss.android@gmail.com
 description: "Study blog for Java, javaScript, Web, Spring-framework, back-end processing, etc."
 keyword: "Java, javascript, web, html, jsp, spring, springboot"
-url: "http://4urdev.tistory.com/"              # your host, for absolute URL
-baseurl: "/blog"                             # for example, '/blog' if your blog hosted on 'host/blog'
+url: "https://simplify-study.github.io/"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
 future: true
@@ -79,7 +79,7 @@ netease_comment: false
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Everyday study and work, for software engineering"
-sidebar-avatar: /blog/img/avatar-simplify.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar-simplify.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
