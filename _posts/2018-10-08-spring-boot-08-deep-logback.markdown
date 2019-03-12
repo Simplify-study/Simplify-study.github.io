@@ -2,7 +2,7 @@
 layout:     post
 title:      "SpringBoot - (8) Deep into Logback"
 subtitle:   "SpringBoot - (8) Logback 상세화"
-date:       2018-10-06
+date:       2018-10-08 23:01
 author:     "Jonghun Park"
 header-img: "img/post-bg-springboot.jpg"
 header-mask: 0.3
