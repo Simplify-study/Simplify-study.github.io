@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      "SpringBoot - (9) Property, Authentication Principal"
-subtitle:   "SpringBoot - (9) Property, Authentication Principal"
-date:       2018-10-10
+title:      "SpringBoot - (10) Call Restful"
+subtitle:   "SpringBoot - (10) Restful 호출하기"
+date:       2018-10-10 23:00
 author:     "Jonghun Park"
 header-img: "img/post-bg-springboot.jpg"
 header-mask: 0.3
@@ -14,108 +14,136 @@ tags:
 
 ## 들어가며
 
-다음으로는, 설정 파일을 읽고, 현재 요청에 대한 사용자 정보를 조회하는 방법을 알아보도록 하겠습니다. API를 호출할 때, 내 정보를 같이 넘기게 해서, 이를 통해 사용자에 대한 상세 정보를 알 수는 있겠으나, 이렇게 하면 Client 쪽에서의 위변조를 통해 요청하는 사용자를 다른 사람으로 바꿔치기 할 가능성이 있습니다. (보안적으로도 해결이 가능한 부분이긴 합니다)
+서버 쪽 개발을 진행하다 보면, 다른 서버에 요청을 해야하는 경우가 있습니다. 예를 들어, 우리 서버 플랫폼에서 다른 플랫폼에 API를 Call하여 그 정보를 보여줘야 한다거나, 날씨, 주식 등의 Open API 를 사용하려고 하는 경우에도 RestTemplate를 사용합니다. 
 
+이러한 부분을 가장 손쉽게 사용하는 방법은 RestTemplate를 사용하는 것입니다. 여기서는 RestTemplate를 생성하고 이를 이용해서 Call을 보낸 뒤, 그 결과를 Logging 해 보겠습니다. 
 
-그렇지만, 이렇게 매번 Call 마다 사용자 정보를 포함하게 하는 것은 사용성 측면에서 매우 비효율적이고, 관리 주체가 서버가 되지 않고 Client 에서 준 정보를 무조건 믿어야 하는 점을 보면 제대로 된 방법은 아닙니다. 결과적으로는 현재 서버가 내어 준 Session 정보를 토대로 하여 사용자 정보가 무엇인지를 가져오는 것이 더욱 좋은 방법이라고 할 수 있습니다. 
-
-여기서는 이러한 사용자 정보를 어떻게 관리하는지 부분에 대해 알아보고, 설정 파일(application.properties, appication.yml 등)을 통해서 알아낸 정보들을 꺼내어 쓰고자 할 떄 어떻게 꺼내는지 알아봅니다.
 
 ## 구현하기
 
-##### Controller 구현하기
+##### Dependency 추가
 
-이번 작업에서는 아래와 같이 Controller 를 만들어 두고 설명을 시작하겠습니다. 우선 아래와 같은 Controller 를 하나 만들어둡니다.
+웹 모듈이 필요하므로 아래와 같이 dependency를 추가합니다.
+
+```xml
+        <!-- APACHE HTTP CLIENT -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+        </dependency>
+        <!-- APACHE HTTP CLIENT -->
+```
+
+서버 개발을 하고 있지만, 다른 서버에 요청을 하고 그 결과를 받기 위해서는 우리가 Client 입장이 되므로, Client 관련 dependency 를 추가합니다.
+
+##### 설정 값 추가
+
+다 하고 설정으로 빼내어도 되지만, 지난 포스트에서 언급했던 것 처럼, Property 값을 가져와서 이를 직접 활용해 보도록 하겠습니다. application.yml 파일을 열고 아래 내용을 추가합니다.
+
+```yml
+restTemplate:
+  factory:
+    readTimeout: 5000 
+    connectTimeout: 3000
+  httpClient:
+    maxConnTotal: 100
+    maxConnPerRoute: 5 
+```
+
+##### RestfulConfig 파일의 생성
+
+아래처럼 RestfulConfig.java 파일을 아래에 추가합니다. 여기에서 restTemplate bean 을 생성해 주게 됩니다. 사용하고자 하는 곳에서는 @autowired annotation 넣고 사용하면 될 것입니다. 
+
+```java 
+package com.simplify.sample.restful;
+ 
+import org.apache.http.client.HttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
+import org.springframework.web.client.RestTemplate;
+ 
+@Configuration
+public class RestfulConfig {
+ 
+    @Value("${restTemplate.factory.readTimeout}")
+    private int READ_TIMEOUT;
+    
+    @Value("${restTemplate.factory.connectTimeout}")
+    private int CONNECT_TIMEOUT;
+    
+    @Value("${restTemplate.httpClient.maxConnTotal}")
+    private int MAX_CONN_TOTAL;
+    
+    @Value("${restTemplate.httpClient.maxConnPerRoute}")
+    private int MAX_CONN_PER_ROUTE;
+    
+    @Bean
+    public RestTemplate restTemplate() {
+        
+        HttpComponentsClientHttpRequestFactory factory = new HttpComponentsClientHttpRequestFactory();
+        factory.setReadTimeout(READ_TIMEOUT); 
+        factory.setConnectTimeout(CONNECT_TIMEOUT); 
+        
+        HttpClient httpClient = HttpClientBuilder.create() 
+                .setMaxConnTotal(MAX_CONN_TOTAL) 
+                .setMaxConnPerRoute(MAX_CONN_PER_ROUTE) 
+                .build();
+ 
+        factory.setHttpClient(httpClient);
+        RestTemplate restTemplate = new RestTemplate(factory);
+ 
+        return restTemplate;
+    }
+}
+```
+
+##### Controller 생성
+
+restful call을 하는 아래 Controller 를 생성하고, http://localhost:8080/restfulTest 를 브라우저에 입력합니다. 로그인창이 최초 1회 나타나고 나면 정상적으로 call 한 결과를 화면에 보여줄 것입니다. 
 
 ```java
-package com.simplify.sample.property.controller;
+package com.simplify.sample.restful;
  
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
  
 import com.simplify.sample.security.domain.SecurityMember;
  
-@Controller
-public class PropertyController {
+@RestController
+public class RestfulController {
  
-    private Logger LOGGER = LoggerFactory.getLogger(PropertyController.class);
+    private Logger LOGGER = LoggerFactory.getLogger(RestfulController.class);
     
-    @Value("${logging.path}")
-    private String logging_path;
+    @Autowired
+    RestTemplate restTemplate;
     
-    @RequestMapping("/openapi/getProperty")
-    public @ResponseBody String getProperty(@AuthenticationPrincipal SecurityMember securityMember) {
+    @RequestMapping("/restfulTest")
+    public String home(@AuthenticationPrincipal SecurityMember securityMember) {
         
-        StringBuffer sb = new StringBuffer();
+        LOGGER.debug(securityMember.getIp());
         
-        if(securityMember != null) {
-            sb.append("securityMember.getIp()=")
-                .append(securityMember.getIp())
-                .append(" / ");
-        }else {
-            sb.append("securityMember is null / ");
-        }
-        sb.append("logging_path=")
-            .append(logging_path);
+        String obj = restTemplate.getForObject("http://localhost:8080/openapi/readUser/abc", String.class);
         
-        LOGGER.debug(sb.toString());
+        LOGGER.debug(obj);
         
-        return sb.toString();
-        
+        return obj;
     }
     
-    @RequestMapping("/getMember")
-    public @ResponseBody String getMember(@AuthenticationPrincipal SecurityMember securityMember) {
-        
-        StringBuffer sb = new StringBuffer();
-        
-        if(securityMember != null) {
-            sb.append("securityMember.getIp()=")
-            .append(securityMember.getIp());
-        }
-        
-        LOGGER.debug(sb.toString());
-        
-        return sb.toString();
-        
-    }
     
 }
 ```
 
-##### /openapi/getProperty
+##### 결과 확인
 
-- @ResponseBody 로 String 형태로 답을 줍니다. 즉 화면 이동이 있지 않고(jsp, ModelAndView, 등) API호출인 것 처럼 그대로 문자열을 response 해 주는 것입니다. 
-  
-- /openapi/** 로 시작하였으므로, 앞서 SecurityConfig 에서 정의해 둔 것 처럼 인증 처리를 거치지 않고 API 호출이 가능합니다. 
-  
-- function 에 들어오는 parameter 중 앞서 SecurityConfig 에서 User 상속받았던 객체를 @AuthenticationPrincipal annotaion을 붙여 넣어줍니다. 이렇게 되면 저 정보는 Spring 에서 자동으로 autowired 되어 들어오게 됩니다.
-  
-- 앞에서는 SecurityMember 가 있는지 확인하고 있으면 그 ip 정보를 문자열에 넣어줍니다. 또한 application.yml 에 선언된 값 중에서 logging.path 정보를 가져와 return 할 문자열에 포함시킵니다. 
-
-
-```yml
-logging:
-  path: c:/dev/log/spring
-  file: log-file  
-```
-
-결과적으로, 사용자 정보를 가져오지는 못합니다. 이유는, openapi 로 시작한 것은 인증을 하지 않는 것으로 정의했고, 그렇게 되면 인증된 사용자 정보 역시 넣어주지 않기 때문입니다. 
-
-![](/blog/img/post/2018-10-10-spring-boot-09-property-auth-principal/spring-boot-09-property-auth-principal-00001.png)
-
-##### /getMember
-
-- 앞선 /openapi/getProperty 와 유사하게 동작하지만, URI 가 /openapi/** 로 시작하지 않습니다. 
-
-/getMember 를 호출하게 되면, 로그인 화면으로 이동하고 로그인을 완료하면 사용자 정보가 올바르게 나타납니다. 
-
-![](/blog/img/post/2018-10-10-spring-boot-09-property-auth-principal/spring-boot-09-property-auth-principal-00002.png)
+![](/blog/img/post/2018-10-10-spring-boot-10-restful-module/spring-boot-10-restful-module-00001.png)
 
 
 GitHub 소스 위치 : https://github.com/Simplify-study/SpringBootSample.git
