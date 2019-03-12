@@ -71,17 +71,6 @@ p + p { font-size: smaller; }
 
 ![](/blog/img/post/2018-10-05-css-child-sibling-selectors/css-child-sibling-selectors-00003.png)
 
+출처: https://css-tricks.com/child-and-sibling-selectors/
 
-
-
-
-
-
-
-
-출처
-
-https://css-tricks.com/child-and-sibling-selectors/
-
-
-출처: https://4urdev.tistory.com/52 [Simplify]
+      https://4urdev.tistory.com/52 [Simplify]
