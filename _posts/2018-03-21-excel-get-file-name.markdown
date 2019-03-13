@@ -1,12 +1,8 @@
 ---
-layout:     post
 title:      "How to get file name from full path using MS Excel"
 subtitle:   "파일 전체 경로에서 파일명만 추출하기"
 date:       2018-03-21
-author:     "Jonghun Park"
 header-img: "img/post-bg-excel.png"
-header-mask: 0.3
-catalog:    true
 tags:
   - Excel
 ---

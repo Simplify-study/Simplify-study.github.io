@@ -1,12 +1,8 @@
 ---
-layout:     post
 title:      "SpringBoot - (1) Startup"
 subtitle:   "SpringBoot - (1) 시작하기"
 date:       2018-09-21
-author:     "Jonghun Park"
 header-img: "img/post-bg-springboot.jpg"
-header-mask: 0.3
-catalog:    true
 tags:
   - Spring
   - SpringBoot

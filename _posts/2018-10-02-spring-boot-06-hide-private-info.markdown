@@ -1,12 +1,8 @@
 ---
-layout:     post
 title:      "SpringBoot - (6) Hide private information"
 subtitle:   "SpringBoot - (6) 민감정보 숨기기"
 date:       2018-10-02
-author:     "Jonghun Park"
 header-img: "img/post-bg-springboot.jpg"
-header-mask: 0.3
-catalog:    true
 tags:
   - Spring
   - SpringBoot

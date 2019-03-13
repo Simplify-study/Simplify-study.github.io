@@ -1,12 +1,8 @@
 ---
-layout:     post
 title:      "How to change port for Remote Desktop"
 subtitle:   "원격 데스크톱 연결 포트(3389) 변경하기"
 date:       2018-11-26 15:56:00 
-author:     "Jonghun Park"
 header-img: "img/home-bg-o.jpg"
-header-mask: 0.3
-catalog:    true
 tags:
   - Windows
   - RDP

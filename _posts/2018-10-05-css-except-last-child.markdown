@@ -1,12 +1,8 @@
 ---
-layout:     post
 title:      "CSS select except last child"
 subtitle:   "마지막 자식 노드를 제외한 선택자"
 date:       2018-10-05
-author:     "Jonghun Park"
 header-img: "img/post-bg-css.jpg"
-header-mask: 0.3
-catalog:    true
 tags:
   - web
   - css

@@ -1,12 +1,8 @@
 ---
-layout:     post
 title:      "Child & Sibling Selectors"
 subtitle:   "자식 노드 선택자"
 date:       2018-10-05 23:59
-author:     "Jonghun Park"
 header-img: "img/post-bg-css.jpg"
-header-mask: 0.3
-catalog:    true
 tags:
   - web
   - css

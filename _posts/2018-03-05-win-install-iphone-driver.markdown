@@ -1,12 +1,8 @@
 ---
-layout:     post
 title:      "How to install Apple USB driver without iTunes"
 subtitle:   "아이튠즈 없이 아이폰 USB드라이버 설치하기"
 date:       2018-03-05
-author:     "Jonghun Park"
 header-img: "img/post-bg-windows.jpg"
-header-mask: 0.3
-catalog:    true
 tags:
   - Windows
   - iPhone

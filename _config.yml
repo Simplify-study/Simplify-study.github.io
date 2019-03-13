@@ -107,6 +107,7 @@ defaults:
       path: ""
       type: "post"
     values: 
+      layout: post
       author: "Jonghun Park"
       header-mask: 0.6
       catalog: true

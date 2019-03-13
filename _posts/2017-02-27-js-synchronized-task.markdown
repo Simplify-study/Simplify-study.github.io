@@ -1,12 +1,8 @@
 ---
-layout:     post
 title:      "How to do synchronized task AFTER async tasks are done"
 subtitle:   "자바스크립트에서 비동기 여러개 실행 후 다음동작하도록 구현하기"
 date:       2017-02-27
-author:     "Jonghun Park"
 header-img: "img/post-bg-js-version.jpg"
-header-mask: 0.3
-catalog:    true
 tags:
   - javascript
 ---

@@ -1,12 +1,8 @@
 ---
-layout:     post
 title:      "JavaScripting Powerful JavaScript with && and ||"
 subtitle:   "&& 과 || 를 이용한 고급 연산"
 date:       2015-08-05
-author:     "Jonghun Park"
 header-img: "img/post-bg-js-version.jpg"
-header-mask: 0.3
-catalog:    true
 tags:
   - javascript
 ---

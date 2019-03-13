@@ -1,12 +1,8 @@
 ---
-layout:     post
 title:      "SpringBoot - (9) Property, Authentication Principal"
 subtitle:   "SpringBoot - (9) Property, Authentication Principal"
 date:       2018-10-10
-author:     "Jonghun Park"
 header-img: "img/post-bg-springboot.jpg"
-header-mask: 0.3
-catalog:    true
 tags:
   - Spring
   - SpringBoot

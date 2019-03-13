@@ -1,12 +1,8 @@
 ---
-layout:     post
 title:      "SpringBoot - (5) Create View"
 subtitle:   "SpringBoot - (5) View 연동"
 date:       2018-10-01
-author:     "Jonghun Park"
 header-img: "img/post-bg-springboot.jpg"
-header-mask: 0.3
-catalog:    true
 tags:
   - Spring
   - SpringBoot

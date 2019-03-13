@@ -1,12 +1,8 @@
 ---
-layout:     post
 title:      "How to list-up properties in an object"
 subtitle:   "객체에서 key값 불러오기, 객체 모든 속성 출력하기"
 date:       2015-07-29 23:14:00
-author:     "Jonghun Park"
 header-img: "img/post-bg-js-version.jpg"
-header-mask: 0.3
-catalog:    true
 tags:
   - javascript
 ---

@@ -1,12 +1,8 @@
 ---
-layout:     post
 title:      "Linux Symbolic link"
 subtitle:   "심볼릭 링크에 대해"
 date:       2018-10-05
-author:     "Jonghun Park"
 header-img: "img/post-bg-linux.jpg"
-header-mask: 0.3
-catalog:    true
 tags:
   - linux
   - Ubuntu

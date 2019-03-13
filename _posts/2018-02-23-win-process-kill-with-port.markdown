@@ -1,12 +1,8 @@
 ---
-layout:     post
 title:      "How to terminate process with a specific port"
 subtitle:   "윈도우에서 특정 포트 사용중인 프로세스 종료하기"
 date:       2018-02-23
-author:     "Jonghun Park"
 header-img: "img/post-bg-windows.jpg"
-header-mask: 0.3
-catalog:    true
 tags:
   - Windows
 ---

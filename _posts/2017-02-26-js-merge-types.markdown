@@ -1,12 +1,8 @@
 ---
-layout:     post
 title:      "How to merge different object in javascript"
 subtitle:   "두 개의 Object 를 하나로 병합하기"
 date:       2017-02-26
-author:     "Jonghun Park"
 header-img: "img/post-bg-js-version.jpg"
-header-mask: 0.3
-catalog:    true
 tags:
   - javascript
 ---

@@ -1,12 +1,8 @@
 ---
-layout:     post
 title:      "Selected Row for jqGrid"
 subtitle:   "jqGrid 에서 선택된 행 관련사항 정리"
 date:       2018-10-05
-author:     "Jonghun Park"
 header-img: "img/post-bg-css.jpg"
-header-mask: 0.3
-catalog:    true
 tags:
   - web
   - javascript

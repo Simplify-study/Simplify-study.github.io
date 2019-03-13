@@ -1,12 +1,8 @@
 ---
-layout:     post
 title:      "SpringBoot - (10) Call Restful"
 subtitle:   "SpringBoot - (10) Restful 호출하기"
 date:       2018-10-10 23:00
-author:     "Jonghun Park"
 header-img: "img/post-bg-springboot.jpg"
-header-mask: 0.3
-catalog:    true
 tags:
   - Spring
   - SpringBoot

@@ -1,12 +1,8 @@
 ---
-layout:     post
 title:      "SpringBoot - (2) Create new Project"
 subtitle:   "SpringBoot - (2) 프로젝트 생성"
 date:       2018-09-21
-author:     "Jonghun Park"
 header-img: "img/post-bg-springboot.jpg"
-header-mask: 0.3
-catalog:    true
 tags:
   - Spring
   - SpringBoot

@@ -1,12 +1,8 @@
 ---
-layout:     post
 title:      "Set and use property value for an object in javascript with jQuery"
 subtitle:   "jQuery를 이용한 프로퍼티 확인 및 설정하기"
 date:       2017-03-05
-author:     "Jonghun Park"
 header-img: "img/post-bg-js-version.jpg"
-header-mask: 0.3
-catalog:    true
 tags:
   - javascript
   - jQuery

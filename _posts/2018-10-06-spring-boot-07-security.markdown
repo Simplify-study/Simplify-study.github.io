@@ -1,12 +1,8 @@
 ---
-layout:     post
 title:      "SpringBoot - (7) Security"
 subtitle:   "SpringBoot - (7) Spring Security 적용하기"
 date:       2018-10-06
-author:     "Jonghun Park"
 header-img: "img/post-bg-springboot.jpg"
-header-mask: 0.3
-catalog:    true
 tags:
   - Spring
   - SpringBoot

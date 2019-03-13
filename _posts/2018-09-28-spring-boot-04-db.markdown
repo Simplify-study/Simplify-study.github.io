@@ -1,5 +1,4 @@
 ---
-layout:     post
 title:      "SpringBoot - (4) Connect to DB"
 subtitle:   "SpringBoot - (4) DB 연동하기"
 date:       2018-09-21
