@@ -3,10 +3,7 @@ layout:     post
 title:      "SpringBoot - (4) Connect to DB"
 subtitle:   "SpringBoot - (4) DB 연동하기"
 date:       2018-09-21
-author:     "Jonghun Park"
 header-img: "img/post-bg-springboot.jpg"
-header-mask: 0.3
-catalog:    true
 tags:
   - Spring
   - SpringBoot
