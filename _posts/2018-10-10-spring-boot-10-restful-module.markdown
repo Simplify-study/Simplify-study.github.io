@@ -2,6 +2,10 @@
 title:      "SpringBoot - (10) Call Restful"
 subtitle:   "SpringBoot - (10) Restful 호출하기"
 date:       2018-10-10 23:00
+header-img: "img/post-bg-springboot.jpg"
+tags:
+  - Spring
+  - SpringBoot
 ---
 
 ## 들어가며
