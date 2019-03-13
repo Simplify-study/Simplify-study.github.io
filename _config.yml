@@ -104,11 +104,12 @@ page-mathjax: false
 collections:
 - springboot
 
+# collections directory
+collections_dir: collections
 
 # post defaults
 defaults:
-  - 
-    scope: 
+  - scope: 
       path: ""
       type: "post"
     values: 
@@ -116,8 +117,7 @@ defaults:
       author: "Jonghun Park"
       header-mask: 0.6
       catalog: true
-  - 
-    scope: 
+  - scope: 
       path: ""
       type: springboot
     values: 
