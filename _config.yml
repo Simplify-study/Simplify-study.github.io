@@ -100,6 +100,11 @@ page-mathjax: false
 
 
 
+# collections
+collections:
+- springboot
+
+
 # post defaults
 defaults:
   - 
@@ -111,6 +116,21 @@ defaults:
       author: "Jonghun Park"
       header-mask: 0.6
       catalog: true
+  - 
+    scope: 
+      path: ""
+      type: springboot
+    values: 
+      layout: post
+      author: "Jonghun Park"
+      header-mask: 0.6
+      catalog: true
+      header-img: "img/post-bg-springboot.jpg"
+      tags:
+        - Spring
+        - SpringBoot
+
+
 
 # Friends
 #friends: [

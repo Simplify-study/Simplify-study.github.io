@@ -2,7 +2,7 @@
 title:      "Selected Row for jqGrid"
 subtitle:   "jqGrid 에서 선택된 행 관련사항 정리"
 date:       2018-10-05
-header-img: "img/post-bg-css.jpg"
+header-img: "img/post-bg-js-version.jpg"
 tags:
   - web
   - javascript
