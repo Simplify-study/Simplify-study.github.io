@@ -17,43 +17,44 @@ tags:
 
 
 
-Symbol|HTML Number|HTML Name|Description
-------|-----------|---------|-----------
-&#33;|```&#33;```|		|exclamation point
-&#34;|```&#34;```|	```&quot\;```|double quotes
-&#35;|```&#35;```|		|number sign
-&#36;|```&#36;```|		|dollar sign
-&#37;|```&#37;```|		|percent sign
-&#38;|```&#38;```|	```&amp\;```|ampersand
-&#39;|```&#39;```|		|single quote
-&#40;|```&#40;```|		|opening parenthesis
-&#41;|```&#41;```|		|closing parenthesis
-&#42;|```&#42;```|		|asterisk
-&#43;|```&#43;```|		|plus sign
-&#44;|```&#44;```|		|comma
-&#45;|```&#45;```|		|minus sign - hyphen
-&#46;|```&#46;```|		|period
-&#47;|```&#47;```|		|slash
-&#58;|```&#58;```|		|colon
-&#59;|```&#59;```|		|semicolon
-&#60;|```&#60;```|	```&lt;```|less than sign
-&#61;|```&#61;```|		|equal sign 
-&#62;|```&#62;```|	```&gt;```|greater than sign
-&#63;|```&#63;```|		|question mark
-&#64;|```&#64;```|		|at symbol
-&#91;|```&#91;```|		|opening bracket
-&#92;|```&#92;```|		|back slash
-&#93;|```&#93;```|		|closing bracket
-&#94;|```&#94;```|		|caret - circumflex
-&#95;|```&#95;```|		|underscore
-&#96;|```&#96;```|		|grave accent
-&#123;|```&#123;```|		|opening brace
-&#124;|```&#124;```|		|vertical bar - pipe
-&#125;|```&#125;```|		|closing brace
-&#126;|```&#126;```|		|equivalency sign - tilde
-&#8211;|```&#8211;```|		|en dash
+|Symbol|HTML Number|HTML Name|Description|
+|------|-----------|---------|-----------|
+|&#33;|```&#33;```|		|exclamation point|
+|&#34;|```&#34;```|	```&quot\;```|double quotes|
+|&#35;|```&#35;```|		|number sign|
+|&#36;|```&#36;```|		|dollar sign|
+|&#37;|```&#37;```|		|percent sign|
+|&#38;|```&#38;```|	```&amp\;```|ampersand|
+|&#39;|```&#39;```|		|single quote|
+|&#40;|```&#40;```|		|opening parenthesis|
+|&#41;|```&#41;```|		|closing parenthesis|
+|&#42;|```&#42;```|		|asterisk|
+|&#43;|```&#43;```|		|plus sign|
+|&#44;|```&#44;```|		|comma|
+|&#45;|```&#45;```|		|minus sign - hyphen|
+|&#46;|```&#46;```|		|period|
+|&#47;|```&#47;```|		|slash|
+|&#58;|```&#58;```|		|colon|
+|&#59;|```&#59;```|		|semicolon|
+|&#60;|```&#60;```|	```&lt;```|less than sign|
+|&#61;|```&#61;```|		|equal sign |
+|&#62;|```&#62;```|	```&gt;```|greater than sign|
+|&#63;|```&#63;```|		|question mark|
+|&#64;|```&#64;```|		|at symbol|
+|&#91;|```&#91;```|		|opening bracket|
+|&#92;|```&#92;```|		|back slash|
+|&#93;|```&#93;```|		|closing bracket|
+|&#94;|```&#94;```|		|caret - circumflex|
+|&#95;|```&#95;```|		|underscore|
+|&#96;|```&#96;```|		|grave accent|
+|&#123;|```&#123;```|		|opening brace|
+|&#124;|```&#124;```|		|vertical bar - pipe|
+|&#125;|```&#125;```|		|closing brace|
+|&#126;|```&#126;```|		|equivalency sign - tilde|
+|&#8211;|```&#8211;```|		|en dash|
 
 관련된 문자를 찾고 싶어도 용어를 몰라서 못 찾는 것은 이제 그만!!!
 
-출처: http://www.ascii.cl/htmlcodes.htm
+출처: http://ccambo.blogspot.com/2017/04/markdown_5.html
+http://www.ascii.cl/htmlcodes.htm
 
