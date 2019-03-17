@@ -2,7 +2,7 @@
 title:      "How to check character and number in java"
 subtitle:   "자바에서 문자와 숫자 구분하기"
 date:       2019-03-18 00:00 
-header-img: "img/home-bg-java.jpg"
+header-img: "img/post-bg-java.jpg"
 tags:
   - java
 ---
