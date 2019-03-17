@@ -1,10 +1,10 @@
 ---
-title:      "How to use symbolic character in markdown"
-subtitle:   "마크다운 문서에서 특수문사 사용하기"
-date:       2019-03-13 00:00 
-header-img: "img/home-bg-o.jpg"
+title:      "How to check character and number in java"
+subtitle:   "자바에서 문자와 숫자 구분하기"
+date:       2019-03-18 00:00 
+header-img: "img/home-bg-java.jpg"
 tags:
-  - Markdown
+  - java
 ---
 
 ## 들어가며
