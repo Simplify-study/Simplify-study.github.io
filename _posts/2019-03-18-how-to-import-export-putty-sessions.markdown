@@ -57,7 +57,7 @@ regedit /i putty-sessions.reg
 regedit /i putty.reg
 ```
 
-##### PowerShell:
+###### PowerShell:
 
 ```cmd
 reg import putty-sessions.reg
