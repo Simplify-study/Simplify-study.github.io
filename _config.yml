@@ -102,7 +102,9 @@ page-mathjax: false
 
 # collections
 collections:
-- springboot
+  springboot:
+    output: true
+    permalink: /:collectin/:path/
 
 
 # # collections directory
