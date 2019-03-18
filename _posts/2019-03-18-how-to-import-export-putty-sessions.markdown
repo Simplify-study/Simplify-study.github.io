@@ -1,6 +1,6 @@
 ---
 title:      "How to Backup and restore putty sessions"
-subtitle:   "자바에서 문자와 숫자 구분하기"
+subtitle:   "Putty 세션 백업, 복원하기"
 date:       2019-03-18 01:00 
 header-img: "img/post-bg-web.jpg"
 tags:
