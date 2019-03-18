@@ -12,7 +12,7 @@ tags:
 
 putty에 세션을 백업하고 복원하는 것이 가끔이나마 필요하여 다음과 같이 정리합니다. 출처는 글의 맨 아래에 명시 해 두었습니다.
 
-## 구현방법
+## 백업/복원방법
 
 ### Export
 
@@ -64,10 +64,10 @@ reg import putty-sessions.reg
 reg import putty.reg
 ```
 
-- Note: *do not replace* ```SimonTatham``` with your username.
+- Note: **do not replace** ```SimonTatham``` with your username.
 
 - Note: It will create a ```reg``` file on the Desktop of the current user.
 
-- Note: It will *not* export related SSH keys.
+- Note: It will **not** export related SSH keys.
 
 출처 : https://stackoverflow.com/questions/13023920/how-to-export-import-putty-sessions-list
