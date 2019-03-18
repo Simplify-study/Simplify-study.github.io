@@ -101,10 +101,10 @@ page-mathjax: false
 
 
 # collections
-collections:
-  springboot:
-    output: true
-    permalink: /:collection/:path/
+# collections:
+#   springboot:
+#     output: true
+#     permalink: /:collection/:path/
 
 
 # # collections directory
