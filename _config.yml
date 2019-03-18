@@ -102,8 +102,8 @@ page-mathjax: false
 
 # collections
 collections:
-  - springboot:
-      output: true
+  springboot:
+    output: true
 
 # # collections directory
 # collections_dir: collections
