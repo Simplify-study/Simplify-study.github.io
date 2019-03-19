@@ -1,7 +1,7 @@
 ---
 title:      "Start script and service when boot"
 subtitle:   "부팅 시 스크립트 및 서비스 시작하기"
-date:       2018-10-05
+date:       2019-03-19 01:00
 header-img: "img/post-bg-linux.jpg"
 tags:
   - linux
