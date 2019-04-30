@@ -295,6 +295,7 @@ public class FindNearGroupSample {
     
 }
 
+
 class Position{
     
     private int index;
