@@ -75,5 +75,137 @@ public class ArrayListCollectionSample {
 [3, 4]
 ```
 
+##### 결과 받아오기
+
+Printout 만 하려는 목적이라면 상관없으나, 거의 이러한 경우가 없고 저 경우의 수들을 모두 사용하고자 할 것이므로 배열 등을 넘겨서 저 결과를 받아와 보려고 합니다. 
+
+```java
+package com.jonghun.test;
+
+import java.util.ArrayList;
+
+public class ArrayListCollectionSample {
+
+    public static void main(String[] args) {
+        
+        ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
+        
+        pick(5, new ArrayList<Integer>(), 2, result);
+
+        for (ArrayList<Integer> arrayList : result) {
+            System.out.println(arrayList);
+        }
+    }
+
+    private static void pick(int n, ArrayList<Integer> picked, int toPick, ArrayList<ArrayList<Integer>> collection) {
+        
+        if (toPick == 0) {
+            //System.out.println(picked);
+            collection.add(picked);
+            return;
+        }
+
+        int smallest = picked.isEmpty() ? 0 : picked.get(picked.size() - 1) + 1;
+
+        for (int next = smallest; next < n; next++) {
+            picked.add(next);
+            pick(n, new ArrayList<Integer>(picked), toPick - 1, collection);
+            picked.remove(picked.size() - 1);
+        }
+    }
+
+}
+```
+
+결과
+
+```
+[0, 1]
+[0, 2]
+[0, 3]
+[0, 4]
+[1, 2]
+[1, 3]
+[1, 4]
+[2, 3]
+[2, 4]
+[3, 4]
+```
+
+##### 전체 조합 가져오기
+
+전체 조합을 출력하여 모든 경우의 수를 가져오려면 아래와 같이 구현합니다.
+
+```java
+package com.jonghun.test;
+
+import java.util.ArrayList;
+
+public class ArrayListCollectionSample {
+
+    public static void main(String[] args) {
+        
+        ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
+        
+        for (int inx = 2; inx <= 5; inx++) {
+            pick(5, new ArrayList<Integer>(), inx, result);
+        }
+
+        for (ArrayList<Integer> arrayList : result) {
+            System.out.println(arrayList);
+        }
+    }
+
+    private static void pick(int n, ArrayList<Integer> picked, int toPick, ArrayList<ArrayList<Integer>> collection) {
+        
+        if (toPick == 0) {
+            //System.out.println(picked);
+            collection.add(picked);
+            return;
+        }
+
+        int smallest = picked.isEmpty() ? 0 : picked.get(picked.size() - 1) + 1;
+
+        for (int next = smallest; next < n; next++) {
+            picked.add(next);
+            pick(n, new ArrayList<Integer>(picked), toPick - 1, collection);
+            picked.remove(picked.size() - 1);
+        }
+    }
+
+}
+```
+
+결과
+
+```
+[0, 1]
+[0, 2]
+[0, 3]
+[0, 4]
+[1, 2]
+[1, 3]
+[1, 4]
+[2, 3]
+[2, 4]
+[3, 4]
+[0, 1, 2]
+[0, 1, 3]
+[0, 1, 4]
+[0, 2, 3]
+[0, 2, 4]
+[0, 3, 4]
+[1, 2, 3]
+[1, 2, 4]
+[1, 3, 4]
+[2, 3, 4]
+[0, 1, 2, 3]
+[0, 1, 2, 4]
+[0, 1, 3, 4]
+[0, 2, 3, 4]
+[1, 2, 3, 4]
+[0, 1, 2, 3, 4]
+```
+
 
 참고 : https://timpani.tistory.com/entry/java-%EB%AA%A8%EB%93%A0-%EC%A1%B0%ED%95%A9-%EB%A7%8C%EB%93%A4%EA%B8%B0
