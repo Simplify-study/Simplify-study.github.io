@@ -23,7 +23,7 @@ tags:
 다음과 같은 지도 형태의 matrix 에서 같은 값을 가진 원소들을 찾아보도록 하겠습니다. 
 
 ```java
-int[][] geoData = new int[][] {
+int[][] matrix = new int[][] {
     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
     {0, 1, 0, 0, 0, 0, 2, 2, 2, 0},
@@ -114,11 +114,11 @@ ArrayList 의 함수 중 contains 함수는 for 문을 돌면서 해당 element 
 ##### 초기 함수
 
 ```java
-private static ArrayList<Position> findGroup(int[][] geoData, Position position) {
+private static ArrayList<Position> findGroup(int[][] matrix, Position position) {
         
     ArrayList<Position> group = new ArrayList<Position>();
     
-    if(geoData[position.getRow()][position.getCol()] == 0) {
+    if(matrix[position.getRow()][position.getCol()] == 0) {
         return group;
     }
     
@@ -133,7 +133,7 @@ private static ArrayList<Position> findGroup(int[][] geoData, Position position)
     ArrayList<Position> nears = null;
     
     do {
-        nears = findNear(geoData, pos);
+        nears = findNear(matrix, pos);
         
         pos.clear();
 
@@ -159,28 +159,28 @@ private static ArrayList<Position> findGroup(int[][] geoData, Position position)
 ##### 주변 위치 찾는 함수
 
 ```java
-private static ArrayList<Position> findNear(int[][] geoData, ArrayList<Position> pos) {
+private static ArrayList<Position> findNear(int[][] matrix, ArrayList<Position> pos) {
         
     ArrayList<Position> nears = new ArrayList<Position>();
     
     for (Position position : pos) {
         
-        int num = geoData[position.getRow()][position.getCol()];
+        int num = matrix[position.getRow()][position.getCol()];
         
         if(position.getRow() - 1 > -1
-                && geoData[position.getRow() - 1][position.getCol()] == num) { // up
+                && matrix[position.getRow() - 1][position.getCol()] == num) { // up
             nears.add(new Position(position.getRow() - 1, position.getCol()));
         }
-        if(position.getRow() + 1 < geoData.length
-                && geoData[position.getRow() + 1][position.getCol()] == num) { // down
+        if(position.getRow() + 1 < matrix.length
+                && matrix[position.getRow() + 1][position.getCol()] == num) { // down
             nears.add(new Position(position.getRow() + 1, position.getCol()));
         }
         if(position.getCol() - 1 > -1
-                && geoData[position.getRow()][position.getCol() - 1] == num) { // left
+                && matrix[position.getRow()][position.getCol() - 1] == num) { // left
             nears.add(new Position(position.getRow(), position.getCol() - 1));
         }
-        if(position.getCol() + 1 < geoData[0].length
-                && geoData[position.getRow()][position.getCol() + 1] == num) { // right
+        if(position.getCol() + 1 < matrix[0].length
+                && matrix[position.getRow()][position.getCol() + 1] == num) { // right
             nears.add(new Position(position.getRow(), position.getCol() + 1));
         }
         
@@ -205,7 +205,7 @@ public class FindNearGroupSample {
 
     public static void main(String[] args) {
         
-        int[][] geoData = new int[][] {
+        int[][] matrix = new int[][] {
             {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
             {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
             {0, 1, 0, 0, 0, 0, 2, 2, 2, 0},
@@ -218,20 +218,20 @@ public class FindNearGroupSample {
             {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
         };
         
-        ArrayList<Position> group = findGroup(geoData, new Position(5, 6));
+        ArrayList<Position> group = findGroup(matrix, new Position(5, 6));
         
         System.out.println(group);
         
-        ArrayList<Position> group2 = findGroup(geoData, new Position(5, 2));
+        ArrayList<Position> group2 = findGroup(matrix, new Position(5, 2));
         
         System.out.println(group2);
     }
 
-    private static ArrayList<Position> findGroup(int[][] geoData, Position position) {
+    private static ArrayList<Position> findGroup(int[][] matrix, Position position) {
         
         ArrayList<Position> group = new ArrayList<Position>();
         
-        if(geoData[position.getRow()][position.getCol()] == 0) {
+        if(matrix[position.getRow()][position.getCol()] == 0) {
             return group;
         }
         
@@ -246,7 +246,7 @@ public class FindNearGroupSample {
         ArrayList<Position> nears = null;
         
         do {
-            nears = findNear(geoData, pos);
+            nears = findNear(matrix, pos);
             
             pos.clear();
 
@@ -263,28 +263,28 @@ public class FindNearGroupSample {
         return group;
     }
 
-    private static ArrayList<Position> findNear(int[][] geoData, ArrayList<Position> pos) {
+    private static ArrayList<Position> findNear(int[][] matrix, ArrayList<Position> pos) {
         
         ArrayList<Position> nears = new ArrayList<Position>();
         
         for (Position position : pos) {
             
-            int num = geoData[position.getRow()][position.getCol()];
+            int num = matrix[position.getRow()][position.getCol()];
             
             if(position.getRow() - 1 > -1
-                    && geoData[position.getRow() - 1][position.getCol()] == num) { // up
+                    && matrix[position.getRow() - 1][position.getCol()] == num) { // up
                 nears.add(new Position(position.getRow() - 1, position.getCol()));
             }
-            if(position.getRow() + 1 < geoData.length
-                    && geoData[position.getRow() + 1][position.getCol()] == num) { // down
+            if(position.getRow() + 1 < matrix.length
+                    && matrix[position.getRow() + 1][position.getCol()] == num) { // down
                 nears.add(new Position(position.getRow() + 1, position.getCol()));
             }
             if(position.getCol() - 1 > -1
-                    && geoData[position.getRow()][position.getCol() - 1] == num) { // left
+                    && matrix[position.getRow()][position.getCol() - 1] == num) { // left
                 nears.add(new Position(position.getRow(), position.getCol() - 1));
             }
-            if(position.getCol() + 1 < geoData[0].length
-                    && geoData[position.getRow()][position.getCol() + 1] == num) { // right
+            if(position.getCol() + 1 < matrix[0].length
+                    && matrix[position.getRow()][position.getCol() + 1] == num) { // right
                 nears.add(new Position(position.getRow(), position.getCol() + 1));
             }
             
