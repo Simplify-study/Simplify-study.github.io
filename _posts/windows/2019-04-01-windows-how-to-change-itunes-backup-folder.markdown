@@ -7,7 +7,7 @@ tags:
   - Windows
   - iPhone
   - iTunes
-published : false
+published : true
 ---
 
 ## 들어가며
